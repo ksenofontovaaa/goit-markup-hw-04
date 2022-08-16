@@ -25,7 +25,7 @@ ul {
     text-decoration: none;
 }
 
-.img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -98,9 +98,16 @@ ul {
     color: #212121;
 }
 
+
 .header-contact-link {
-    color: #757575;
+    display: flex;
+
+    gap: 10px;
+
+    color: #757575;  
 }
+
+
 
 .header-site-link:hover, .header-site-link:focus {
     color: #2196F3;
@@ -110,19 +117,26 @@ ul {
     color: #2196F3;
     } 
 
+.contact-icons {
+    fill: currentColor;
+}
 
 .main > .container {
     display: flex;
 }
 
 .banner {
-    background-color: #2F303A;
+    /* background-color: #2F303A; */
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
 }
 
 .bancontent {
     align-items: center;
+
+    
 }
 
 .banner-title {
@@ -171,6 +185,20 @@ ul {
     margin-right: 30px;
 }
 
+.benef-icon-container {
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
 .benefits-title {
     font-weight: 700;
     font-size: 14px;
@@ -188,6 +216,7 @@ ul {
     letter-spacing: 0.03em;
     color: #757575;
     }
+
 
 
 .work {
@@ -225,9 +254,39 @@ ul {
 }
 
 .workers-item {
+    padding-bottom: 30px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+.workers-soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.workers-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workers-soc-icon {
+    fill: #AFB1B8;
+}
+
+.workers-soc-link:hover {
+    background-color: #2196F3;
+}
+
+.workers-soc-link:hover .workers-soc-icon{
+    fill: #FFFFFF;
 }
 
 .workers-title {
@@ -258,8 +317,64 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    padding-bottom: 30px; 
+    padding-bottom: 16px;
+    
 }
+
+.clients {
+    padding-top: 90px;
+    padding-bottom: 90px;
+   
+}
+
+.clients-list {
+    display: flex;
+
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-icon {
+    
+    fill: #AFB1B8;
+}
+
+.client-link:hover {
+    border: 1px solid #2196F3;
+}
+
+.client-link:hover .client-icon{
+    fill: #2196F3;
+    
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+
+    margin-bottom: 50px;
+}
+
+
+
+
 
 .labor-list {
     display: flex;
@@ -313,6 +428,13 @@ ul {
 
 }
 
+.all-item:hover, .all-item:focus{
+    border: 1px solid #EEEEEE;
+    cursor: pointer;
+    box-shadow: unset;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .all-content {
     padding: 20px 24px;
 
@@ -343,6 +465,12 @@ ul {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer > .container {
+    display: flex;
+
+    gap: 70px;
 }
 
 
@@ -391,4 +519,45 @@ ul {
     color: #2196F3;
 }
 
+.foot-soc-title{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-social-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.foot-soc-item {
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.foot-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-soc-icon {
+    fill: #FFFFFF;
+}
+
+.foot-soc-link:hover {
+    background-color: #2196F3;
+}
+
+.foot-soc-link:hover .foot-soc-icon{
+    fill: #FFFFFF;
+}
